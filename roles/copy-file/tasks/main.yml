@@ -1,0 +1,7 @@
+- name: add example file to remote host
+  copy:
+    src:   copied_file.txt
+    dest:  ~/copied_file.txt
+    owner: root
+    group: root
+    mode:  0644

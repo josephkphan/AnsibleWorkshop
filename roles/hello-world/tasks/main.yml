@@ -1,0 +1,5 @@
+# Deploy Sentinel Container
+- include: deploy_container.yml
+    docker_container_name="{{ hello_world_container_name }}"
+    image_base="{{ hello_world_image_base }}"
+  tags: [ 'hello-world' ]

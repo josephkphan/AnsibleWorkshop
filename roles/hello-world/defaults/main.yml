@@ -1,0 +1,4 @@
+---
+
+hello_world_container_name: "hello-world"
+hello_world_image_base: "{{ docker_registry }}/{{ hello_world_container_name }}"

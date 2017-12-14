@@ -1,0 +1,10 @@
+[vagrant-cluster]
+vagrant1 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2222
+vagrant2 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2200
+vagrant3 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2201
+
+[hello-world]
+vagrant1 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2222
+
+[copy-file]
+vagrant2 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2200

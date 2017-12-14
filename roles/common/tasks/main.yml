@@ -1,0 +1,8 @@
+- name: Execute the command in remote shell -- updating packages
+  shell: sudo apt-get update
+
+- name: Installing Pip
+  shell: sudo apt-get -y install python-pip
+
+- name: using pip to install docker-py (to be able to use docker plugin in ansible)
+  shell: sudo pip install docker-py

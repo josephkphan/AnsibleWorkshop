@@ -1,0 +1,14 @@
+---
+- name: Pull {{ docker_container_name }} docker image
+  docker_image:
+    name: "{{ image_base }}"
+
+- name: Deploy dashboard {{ docker_container_name }} container
+  docker_container:
+      name: "{{ docker_container_name }}"
+      image: "{{ image_base }}"
+      state: started
+      restart_policy: unless-stopped
+      log_driver: json-file
+      log_opt:
+        max-size: 50m
